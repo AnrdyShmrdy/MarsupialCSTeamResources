@@ -1,0 +1,7 @@
+#This command will create a hotspot:
+sudo nmcli d wifi hotspot ifname wlan0 ssid pi4B_hotspot password H0tt3stSp0t autoconnect true
+#In order to have hotspot turn on at startup we need to set "autoconnect=true"
+#Run the command below and change the line that says "autoconnect=false" to "autoconnect=true"
+sudo vim NetworkManager/system-connections/Hotspot.nmconnection 
+#Alternatively you can try running this command to do the same thing. Dunno if it works though as I haven't tested it:
+nmcli con modify Hotspot connection.autoconnect true
