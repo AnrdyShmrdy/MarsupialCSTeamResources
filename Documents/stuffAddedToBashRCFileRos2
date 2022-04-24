@@ -1,0 +1,7 @@
+#Alias for sourcing ROS2 Foxy setup.bash file:
+#alias setup_foxy="source /opt/ros/foxy/setup.bash"
+source /opt/ros/foxy/setup.bash
+#Alias for sourcing local setup.bash file in root of ROS2 workspace directory:
+alias local_setup_foxy="source install/local_setup.bash"
+#Alias for installing dependencies in root of ROS2 workspace directory:
+alias install_foxy_deps="rosdep install -i --from-path src --rosdistro foxy -y"
