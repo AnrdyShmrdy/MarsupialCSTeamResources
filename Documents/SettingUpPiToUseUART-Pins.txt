@@ -1,0 +1,6 @@
+This below page gives info on how you can set up the raspberry pi 4B to use the serial pins instead of USB
+	Page: https://askubuntu.com/questions/1254376/enable-uart-communication-on-pi4-ubuntu-20-04
+	Permalink to the answer I utilized: https://askubuntu.com/a/1338744
+	If for some reason that link doesn't work, it's the answer given by user1502422 on the page
+By the way, when you do this, the name of the device to connect to via serial is /dev/ttyS0
+If for some reason you find that device name is not recognized or doesn't work, try '/dev/AMA0', as that's another device name Linux could refer to arduino as
